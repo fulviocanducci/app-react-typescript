@@ -1,9 +1,9 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react';
 
 interface ICounterContext {
-  counter: number;
-  increment: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-  decrement: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  counter: number | undefined;
+  increment: () => void | undefined;
+  decrement: () => void | undefined;
 }
 
 interface ICounterProviderProps {

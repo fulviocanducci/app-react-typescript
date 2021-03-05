@@ -1,8 +1,7 @@
 import React from 'react';
-import { useCounter } from '../../contexts/Counter';
+import { VscAdd, VscChromeMinimize } from 'react-icons/vsc';
 
-import { VscAdd } from 'react-icons/vsc';
-import { VscChromeMinimize } from 'react-icons/vsc';
+import { useCounter } from '../../contexts/Counter';
 
 function Score() {
   const { counter, increment, decrement } = useCounter();
